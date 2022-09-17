@@ -22,7 +22,7 @@ gcc -o coRSAir coRSAir.c -lssl -lcrypto -lm
 - [generador_clave_wiener.py](generador_clave_wiener.py) creates a private key that is vulnurable to Wiener attack. The key generated is small so, the program runs faster and numbers can be treated with long long int data types. The private key generated
 
 ### Instructions
-Install the following libraries:
+Before running, the following libraries have to be installed:
 - gmpy2:
 ```
 pip install gmpy2
