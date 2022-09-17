@@ -1,5 +1,5 @@
 # cs42_coRSAir
-[coRSAir.c](coRSAir.c) recieve as argument a public key and obtain its modulus and exponent and saved them in *coRSAir_clavepublica.txt*. It also performs the Wienner attack and obtains its private key.
+[coRSAir.c](coRSAir.c) recieve as argument a public key and obtain its modulus and exponent and saved them in *coRSAir_clavepublica.txt*. It also performs the Wiener attack and obtains its private key.
 
 ## Getting started
 The OpenSSL library has to be installed:
@@ -8,7 +8,7 @@ sudo apt-get install libssl-dev
 ```
 
 ## Usage
-1. Create a public and a private key vulnerable to a Wienner Attack with [generador_clave_wiener.py](https://github.com/msoto5/cs42_coRSAir#other-program)
+1. Create a public and a private key vulnerable to a Wiener Attack with [generador_clave_wiener.py](https://github.com/msoto5/cs42_coRSAir#other-program)
 2. Compile coRSAir.c with the follwing instruction:
 ```
 gcc -o coRSAir coRSAir.c -lssl -lcrypto -lm
