@@ -9,10 +9,15 @@ sudo apt-get install libssl-dev
 
 ## Usage
 1. Create a public and a private key vulnerable to a Wiener Attack with [generador_clave_wiener.py](https://github.com/msoto5/cs42_coRSAir#other-program)
+```
+python3 generador_clave_wiener.py
+```
+
 2. Compile coRSAir.c with the follwing instruction:
 ```
 gcc -o coRSAir coRSAir.c -lssl -lcrypto -lm
 ```
+
 3. Run coRSAir by giving the private key created in step 1 as input:
 ```
 ./coRSAir my_pubkey.key
