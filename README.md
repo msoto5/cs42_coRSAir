@@ -23,6 +23,8 @@ gcc -o coRSAir coRSAir.c -lssl -lcrypto -lm
 ./coRSAir my_pubkey.key
 ```
 
+A new file with the public key modulus (N) and exponent (e) will be created. It will also print the private key (d) in terminal if the Wiener Attack is succesfully
+
 ## Other program
 - [generador_clave_wiener.py](generador_clave_wiener.py) creates a private key that is vulnurable to Wiener attack. The key generated is small so, the program runs faster and numbers can be treated with long long int data types. The private key generated
 
